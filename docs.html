@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>เอกสาร - รัฐบาลไทย</title>
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- <div id="loader">
+        <div class="spinner-border text-primary" role="status"></div>
+    </div> -->
+    <header class="navbar navbar-expand-lg px-3" id="first-color">
+        <div class="container-fluid">
+
+            <!-- โลโก้ -->
+            <a class="navbar-brand" href="./index.html">
+                <img src="./assets/thai.png" alt="">
+                <div class="group">
+                    <p>รัฐบาลไทย</p>
+                    <p>Thailand Government</p>
+                </div>
+            </a>
+
+            <!-- hamburger -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- menu -->
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                    <li class="nav-item">
+                        <a class="nav-link active" href="./index.html">หน้าแรก</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="./policy-statement.html">นโยบายรัฐบาล</a>
+                    </li>
+
+                    <!-- dropdown 1 -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                            คณะรัฐมนตรี
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="./cabinet/now.html">คณะรัฐมนตรีปัจจุบัน</a></li>
+                            <li><a class="dropdown-item" href="./cabinet/before.html">คณะรัฐมนตรีก่อนหน้า</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- dropdown 2 -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                            ข้อมูลกระทรวง
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="./ministry/opm.html">สำนักนายกรัฐมนตรี</a></li>
+                            <li><a class="dropdown-item" href="./ministry/mod.html">กระทรวงกลาโหม</a></li>
+                            <li><a class="dropdown-item" href="./ministry/mfa.html">กระทรวงการต่างประเทศ</a></li>
+                            <li><a class="dropdown-item" href="./ministry/mhesi.html">กระทรวงการอุดมศึกษา วิทยาศาสตร์ วิจัยและนวัตกรรม</a></li>
+                            <li><a class="dropdown-item" href="./ministry/moi.html">กระทรวงมหาดไทย</a></li>
+                            <li><a class="dropdown-item" href="./ministry/moj.html">กระทรวงยุติธรรม</a></li>
+                            <li><a class="dropdown-item" href="./ministry/moef.html">กระทรวงเศรษฐกิจและการคลัง</a></li>
+                            <li><a class="dropdown-item" href="./ministry/moph.html">กระทรวงสาธารณสุข</a></li>
+                            <li><a class="dropdown-item" href="./ministry/msetpa.html">กระทรวงองค์การแห่งรัฐ โทรคมนาคม และกิจการเอกชน</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="/#news">ข่าวสาร</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="/docs.html">เอกสาร</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">ติดต่อ</a>
+                    </li>
+
+                </ul>
+
+                <!-- ปุ่มขวา -->
+                <div class="d-flex gap-2">
+                    <button class="btn" id="themeToggle">
+                        เปลี่ยนสี
+                    </button>
+
+                    <button class="btn btn-primary">
+                        เข้าสู่ระบบ
+                    </button>
+                </div>
+            </div>
+
+        </div>
+    </header>
+    
+    <section class="page-header">
+        <div class="container">
+            <h1>เอกสาร</h1>
+
+            <nav class="breadcrumb">
+                <a href="/">หน้าหลัก</a>
+                <span>></span>
+                <span>เอกสาร</span>
+            </nav>
+
+            <!-- รายการเอกสาร -->
+            <ul id="doc-list" class="doc-list"></ul>
+        </div>
+    </section>
+
+    <main class="container py-4">
+
+    </main>
+
+    <footer class="bg-light text-center text-muted py-4 mt-5 border-top">
+        <div class="container">
+            <p class="mb-1">
+                © 2026 รัฐบาลไทย สงวนลิขสิทธิ์
+            </p>
+            <p class="mb-0 small">
+                เว็บไซต์นี้จัดทำขึ้นโดยมีวัตถุประสงค์เพื่อการสวมบทบาทเท่านั้น
+            </p>
+        </div>
+    </footer>
+
+
+    <script>
+    const API_URL = "https://script.google.com/macros/s/AKfycbzTn_4-MtuPp-b-YXkwVTOQ9oBcgQTNfPUPYzGbQEsS43gpxUbNDJzRGM8ov2vc55gcgg/exec";
+
+    fetch(API_URL)
+        .then(res => res.json())
+        .then(data => {
+            const list = document.getElementById("doc-list");
+
+            data.forEach(item => {
+                const li = document.createElement("li");
+
+                li.innerHTML = `
+                    <a href="${item["ลิงก์"]}" target="_blank">
+                        <div class="doc-title">
+                            ${item["ชื่อเอกสาร"]}
+                        </div>
+                        <div class="doc-date">
+                            วันที่: ${item["วันที่"]}
+                        </div>
+                    </a>
+                `;
+
+                list.appendChild(li);
+            });
+        })
+        .catch(err => {
+            console.error(err);
+            document.getElementById("doc-list").innerHTML =
+                "<li style='padding:15px;color:red;'>ไม่สามารถโหลดข้อมูลเอกสารได้</li>";
+        });
+    </script>
+    <script src="./assets/changecol.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

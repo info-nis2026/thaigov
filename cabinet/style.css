@@ -1,0 +1,122 @@
+main {
+    max-width: 720px !important;
+}
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.pages {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
+
+/* นายกเต็มแถว */
+.card-pm {
+    display: flex;
+    grid-column: span 2;
+    background: var(--primary);
+    color: white;
+    padding: 15px;
+    border-radius: 12px;
+}
+
+.card-pm img {
+    width: auto;
+    max-height: 360px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.card-pm > div:has(img) {
+    display: flex;
+    justify-content: center;
+}
+
+.card img {
+    width: 100%;
+}
+
+.card-pm > div {
+    flex: 1; /* แบ่งครึ่ง */
+}
+
+.pm-50 {
+    padding: 12px;
+}
+
+/* รัฐมนตรีครึ่ง */
+.card {
+    background: white;
+    border-radius: 12px;
+    border: 1px solid rgba(0,0,0,0.08);
+}
+
+/* รูป */
+.card img,
+.card-pm img {
+    height: 360px;
+    object-fit: cover;
+    border-radius: 8px;
+    aspect-ratio: 3/4;
+}
+
+/* pagination */
+.pagination {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.pagination button {
+  margin: 0 5px;
+  padding: 6px 12px;
+  border: none;
+  background: var(--primary);
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.pagination button.active {
+  background: var(--accent);
+}
+
+select#cabinetSelect {
+    width: 100%;
+    margin-bottom: 1em;
+    padding: 8px;
+}
+#loader {
+    position: fixed;
+    inset: 0;
+    background: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    transition: opacity 0.4s ease, visibility 0.4s;
+}
+
+#loader.hidden {
+    opacity: 0;
+    visibility: hidden;
+}
+
+/* spinner เท่ ๆ */
+.spinner {
+    width: 50px;
+    height: 50px;
+    border: 5px solid #e0e0e0;
+    border-top: 5px solid #0d6efd; /* สี bootstrap */
+    border-radius: 50%;
+    animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
