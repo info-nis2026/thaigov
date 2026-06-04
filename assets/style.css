@@ -370,3 +370,10 @@ header#first-color button#themeToggle {
     font-size: 0.9rem;
     color: #6b7280;
 }
+@media (min-width: 1400px) {
+  .card img,
+  .card-pm img {
+    object-fit: contain !important;
+    background: var(--primary);
+  }
+}
