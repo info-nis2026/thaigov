@@ -109,7 +109,7 @@
 </div>
 
 <script>
-const API_URL = "https://script.google.com/macros/s/AKfycbxIa2OaPy5W3agNQXNPptCCWKiFrTCD9Q4YDhoBCAW-4AdtIK_MFFvYdFpChoZG_pXrEw/exec";
+const API_URL = "https://script.google.com/macros/s/AKfycbwobQw8vdFH2LB7inCjiUVUvNLUH4BbTRqie_rz0xcq3DMUKshCq3A2eAG1CvCMxYwLxg/exec";
 
 let allData = [];
 
@@ -134,7 +134,7 @@ function render(data) {
     div.className = "card";
 
     div.innerHTML = `
-      <img src="${item["ภาพ"]}" onerror="this.src='https://via.placeholder.com/300x180?text=No+Image'">
+      <img src="${item["ภาพ"]}" onerror="this.src=''">
       <div class="title">${item["ชื่อกิจการ"]}</div>
       <div class="meta"><b>บริษัท:</b> ${item["ชื่อบริษัท"]}</div>
       <div class="meta"><b>ประเภท:</b> ${item["ลักษณะกิจการ"]}</div>
